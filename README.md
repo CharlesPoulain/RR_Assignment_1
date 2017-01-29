@@ -13,3 +13,4 @@ This assignment require :
 9. All of the R code needed to reproduce the results (numbers, plots, etc.) in the report
 
 The assignement is submitted on a github repository in the html file "RR_Assignement.html".
+To see the html document you will need to either copy the document in an html viewer or to use http://htmlpreview.github.io/.
