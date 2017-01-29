@@ -19,7 +19,7 @@ file.remove("activity.csv")
 require(ggplot2)
 hist_data<- na.omit(data)
 n_steps_day<-aggregate(hist_data[,1],by=list(hist_data$date), FUN=sum)
-qplot(stepsByDay, xlab='Total steps per day', ylab='Frequency using binwith 500', binwidth=500)
+qplot(n_steps_day$x, xlab='Total steps per day', ylab='Frequency using binwith 500', binwidth=500)
 ```
 
 ###3. Mean and median number of steps taken each day
