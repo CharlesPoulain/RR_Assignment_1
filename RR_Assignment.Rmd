@@ -1,8 +1,8 @@
 ---
 title: "Reproducible Research first Assignment"
-author: "Charles Poulain"
-date: "29 janvier 2017"
-output: html_document
+output: 
+    html_document : 
+        keep_md: true 
 ---
 
 ###1. Code for reading in the dataset and/or processing the data
