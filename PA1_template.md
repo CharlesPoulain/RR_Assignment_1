@@ -1,11 +1,4 @@
 # Reproducible Research: Peer Assessment 1
----
-title: "Reproducible Research first Assignment"
-output: 
-    html_document : 
-        keep_md: true 
----
-
 ###1. Code for reading in the dataset and/or processing the data
 
 ```r
