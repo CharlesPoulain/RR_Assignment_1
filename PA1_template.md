@@ -106,8 +106,7 @@ Missing values after allocation: 0
 ```r
 hist_data<- data_after_impute
 n_steps_day2<-aggregate(hist_data[,1],by=list(hist_data$date), FUN=sum)
-g<-ggplot(n_steps_day2, aes(x=as.Date(Group.1), y=x)) + geom_bar(stat="identity")+labs(title="Total number of steps each day",y="Steps",x="Date")+theme(plot.title = element_text(hjust = 0.5))
-print(g)
+qplot(n_steps_day2$x, xlab='Total steps per day', ylab='Frequency using binwith 500', binwidth=500)
 ```
 
 ![](PA1_template_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
