@@ -1,4 +1,10 @@
-# Reproducible Research first Assignment
+# Reproducible Research: Peer Assessment 1
+---
+title: "Reproducible Research first Assignment"
+output: 
+    html_document : 
+        keep_md: true 
+---
 
 ###1. Code for reading in the dataset and/or processing the data
 
@@ -39,7 +45,7 @@ g<-ggplot(n_steps_day, aes(x=as.Date(Group.1), y=x)) + geom_bar(stat="identity")
 print(g)
 ```
 
-![](RR_Assignment_files/figure-html/unnamed-chunk-2-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-2-1.png)<!-- -->
 
 ###3. Mean and median number of steps taken each day
 
@@ -76,7 +82,7 @@ g<-ggplot(mean_steps_interval, aes(x=Group.2, y=x))+geom_line()+labs(title="Aver
 print(g)
 ```
 
-![](RR_Assignment_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
 
 ###5. The 5-minute interval that, on average, contains the maximum number of steps
 
@@ -112,7 +118,7 @@ g<-ggplot(n_steps_day2, aes(x=as.Date(Group.1), y=x)) + geom_bar(stat="identity"
 print(g)
 ```
 
-![](RR_Assignment_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
 
 ###8. Panel plot comparing the average number of steps taken per 5-minute interval across weekdays and weekends
 
@@ -132,4 +138,4 @@ g<-ggplot(mean_steps_interval_comparison, aes(x=Group.3, y=x,color=Group.2))+geo
 print(g)
 ```
 
-![](RR_Assignment_files/figure-html/unnamed-chunk-8-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-8-1.png)<!-- -->
