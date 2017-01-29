@@ -45,7 +45,8 @@
     mean_steps_interval$Group.1<-as.POSIXct(mean_steps_interval$Group.1)
     mean_steps_interval$Group.2<-round(as.numeric(mean_steps_interval$Group.1-trunc(mean_steps_interval$Group.1,"days"))/3600,digits=2)
 
-    ggplot(mean_steps_interval, aes(x=Group.2, y=x))+geom_line()+labs(title="Average number of steps per interval",y="Steps",x="Time of the day")+theme(plot.title = element_text(hjust = 0.5))+xlim(0,24)
+    g<-ggplot(mean_steps_interval, aes(x=Group.2, y=x))+geom_line()+labs(title="Average number of steps per interval",y="Steps",x="Time of the day")+theme(plot.title = element_text(hjust = 0.5))+xlim(0,24)
+    print(g)
 
 ![](RR_Assignment_files/figure-markdown_strict/unnamed-chunk-4-1.png)
 
